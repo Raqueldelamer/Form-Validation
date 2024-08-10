@@ -15,7 +15,6 @@ function hasM(firstName) {
 
 let marrySoonElm = document.getElementById("marry-soon");
 
-let marryFarElm = document.getElementById("marry-far");
 
 let firstNameInput = document.getElementById("firstname");
 
@@ -30,13 +29,13 @@ function handleChangeInMarrySoon() {
         console.log("You will marry sooner than later!"); 
     } else {
         marryFarElm.style.color = "blue";
-        console.log("You will have luck in a foreign country!")
+        console.log("You will have luck in a foreign country!");
     }
 }
 
     function handleChangeInM() {
         let input = firstNameInput.value;
-        let m =hasM(input);
+        let m = hasM(input);
         if(m) {
             marrySoonElm.style.color = "red";
         
