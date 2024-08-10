@@ -1,47 +1,52 @@
+
 function tooShort(firstName) {
-    if(firstName.length < 5) {
-        return true;
-    } else {
-        return false;
-    }
-}
-function hasM(firstName) {
-    if(firstName.includes("m")) {
+    if(firstName.length < 6) {
         return true;
     } else {
         return false;
     }
 }
 
-let marrySoonElm = document.getElementById("marry-soon");
+function hasI(firstName) {
+    if(firstName.includes("i")){
+        return true;
+    } else {
+        return false;
+    }
+}
 
-
+let marryEarlyElm = document.getElementById("marry-early");
+let marryNowElm = document.getElementById("marry-now");
+// This is the input element
 let firstNameInput = document.getElementById("firstname");
 
-function handleChangeInMarrySoon() {
-    console.log("Bonjour Monde");
-
+function handleChangeInMarryEarly() {
+    console.log("Hello world");
+    // This is how I get the contents (value) of the input
     let input = firstNameInput.value;
+  
     let isShort = tooShort(input);
-
     if(isShort) {
-        marrySoonElm.style.color = "pink";
-        console.log("You will marry sooner than later!"); 
+        marryEarlyElm.style.color = "green";
+       console.log("You will marry sooner than later");
     } else {
-        marryFarElm.style.color = "blue";
-        console.log("You will have luck in a foreign country!");
+        marryEarlyElm.style.color = "purple";
+        
     }
 }
 
-    function handleChangeInM() {
-        let input = firstNameInput.value;
-        let m = hasM(input);
-        if(m) {
-            marrySoonElm.style.color = "red";
-        
-        } 
+function handleChangeInI() {
+    let input = firstNameInput.value;
+    let i = hasI(input);
+    if(i) {
+        marryNowElm.style.color = "green";
+    } else {
+        marryNowElm.style.color = "purple";
     }
+}
 
-    firstNameInput.addEventListener("input" , handleChangeInMarrySoon)
-
-    firstNameInput.addEventListener("input" , handleChangeInM)
+// Add an event listener
+// (can listen for "input" or "change")
+firstNameInput.addEventListener("input", handleChangeInMarryEarly)
+// Add a second event listener.
+firstNameInput.addEventListener("input", handleChangeInI)

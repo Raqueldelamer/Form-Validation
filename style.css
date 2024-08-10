@@ -1,13 +1,20 @@
 #username:valid,
 #email:valid,
 #password:valid
+
 {
     background-color: lightblue;
 }
 
 #username:invalid,
 #email:invalid,
-#password:invalid 
+#password:invalid
 {
     background-color: lightpink;
 }
+#firstname:valid,
+#username2:valid
+{
+    background-color: lightgray;
+}
+
