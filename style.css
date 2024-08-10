@@ -1,0 +1,13 @@
+#username:valid,
+#email:valid,
+#password:valid
+{
+    background-color: lightblue;
+}
+
+#username:invalid,
+#email:invalid,
+#password:invalid 
+{
+    background-color: lightpink;
+}
