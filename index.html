@@ -19,7 +19,7 @@
         <input type="submit" value="Submit">
         <br><br>
         <label for="password">Password:</label>
-        <input type="password" id="password" id="password" minlength="6">
+        <input type="password" id="password" minlength="6">
         <input type="submit" value="Submit">
       </form>
       <br><br><br>
@@ -35,19 +35,20 @@
         </div>
         <br><br>
         <div>
-             <label for="username2">Username:</label>
-             <input type="text" id="username2" required name="username" minlength="6">
-            <button type="button">Submit</button> 
+        <form name="myform" action="/" onsubmit="return validateform()">
+             <label for="password">Password:</label>
+             <input type="text" id="password2" required name="password" minlength="6">
+            <input type="submit" value="Submit">
+        </form> 
         </div>
         <br>
-        <div>
+    <div>
+        <form name="myform" action="/" onsubmit="return validateemail()">
             <label for="email2">Email:</label>
-        <input type="email2" id="email2" required name="email">
-        <input type="submit" value="Submit">
-        <br><br>
-
-        </div>
-      </div>
+            <input type="email2" id="email2" required name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 <script src="script.js"></script>
 
 </body>

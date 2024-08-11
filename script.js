@@ -44,21 +44,32 @@ function handleChangeInI() {
         marryNowElm.style.color = "purple";
     }
 }
-function handleChangeUserName(){
-    let userName2 = userNameInput.value;
-    console.log("Bnjr monde");
-    if(userName2.length > 5) {
-        return true;
-    } else {
+
+function validateform(){
+    var name=document.myform.name.value;
+    var password=document.myform.password.value;
+
+    if(name==null || name==""){
+    
         return false;
-    }
+    } else if(password.length<6){
+        
+        return false;
+}
 }
 
+function validateemail() {  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
 
-let userName2Elm = document.getElementById("userName2");
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    
+  return true;  
+  }  
+}  
 
-// Add an event listener
-userNameInput.addEventListener("input", handleChangeUserName)
+
 // (can listen for "input" or "change")
 firstNameInput.addEventListener("input", handleChangeInMarryEarly)
 // Add a second event listener.
