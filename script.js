@@ -44,8 +44,21 @@ function handleChangeInI() {
         marryNowElm.style.color = "purple";
     }
 }
+function handleChangeUserName(){
+    let userName2 = userNameInput.value;
+    console.log("Bnjr monde");
+    if(userName2.length > 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+let userName2Elm = document.getElementById("userName2");
 
 // Add an event listener
+userNameInput.addEventListener("input", handleChangeUserName)
 // (can listen for "input" or "change")
 firstNameInput.addEventListener("input", handleChangeInMarryEarly)
 // Add a second event listener.

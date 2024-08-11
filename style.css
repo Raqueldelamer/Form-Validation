@@ -12,9 +12,13 @@
 {
     background-color: lightpink;
 }
-#firstname:valid,
+#email2:valid,
 #username2:valid
 {
     background-color: lightgray;
 }
 
+#username2:invalid,
+#email2:invalid {
+    background-color:  lightgreen;
+}
