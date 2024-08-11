@@ -44,7 +44,7 @@ function handleChangeInI() {
         marryNowElm.style.color = "purple";
     }
 }
-
+// validatpassword() is called by html onsubmit="return validateform()
 function validateform(){
     var name=document.myform.name.value;
     var password=document.myform.password.value;
@@ -57,7 +57,7 @@ function validateform(){
         return false;
 }
 }
-
+// validateemail() is called by html onsubmit="return validateform()
 function validateemail() {  
 var x=document.myform.email.value;  
 var atposition=x.indexOf("@");  
