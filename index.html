@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="index.html">
+    <form action="index.html" onsubmit="return">
         <label for="username">UserName:</label>
         <input type="text" id="username" id="username" minlength="5">
         <input type="submit" value="Submit">
@@ -49,7 +49,7 @@
     <div>
         <form name="myform" action="index.html" onsubmit="return validateemail()">
             <label for="email2">Email:</label>
-            <input type="email2" id="email2" required name="email">
+            <input type="email2" id="email2" minlength="6" required name="email">
             <input type="submit" value="Submit">
         </form>
     </div>
