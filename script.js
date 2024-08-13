@@ -57,7 +57,7 @@ function validateform(){
         return false;
 }
 }
-// validateemail() is called by html onsubmit="return validateform()
+// validateemail() is called by html onsubmit="return validateemail()
 function validateemail() {  
 var x=document.myform.email.value;  
 var atposition=x.indexOf("@");  
